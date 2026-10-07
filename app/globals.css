@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 2.5rem 1.5rem;
+}
+
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.wrap.narrow {
+  max-width: 380px;
+}
+
+.tag {
+  color: #22d3ee;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin: 0 0 0.25rem 0;
+}
+
+h1 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.8rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.who {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin: 0 0 1rem 0;
+}
+
+.card.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.card.stack-tight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card.stack-tight .row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+input {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.card.stack-tight .row input {
+  flex: 1;
+}
+
+button {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.ghost {
+  background: transparent;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+.note-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 0.75rem;
+}
+
+.note-row input {
+  flex: 1;
+}
+
+.note-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.note-row:last-child {
+  border-bottom: none;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.5;
+}
